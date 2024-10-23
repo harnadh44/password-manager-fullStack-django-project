@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Background image using static tag */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Subtle white border */
+    width: 400px;
+    text-align: center;
+    color: #fff;
+}
+
+
+label {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+    /* Label text should also be white */
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"]+label {
+    font-size: 14px;
+    color: #fff;
+    /* Make checkbox label white as well */
+}
+
+input[type="submit"],
+.btn_cls {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+.btn_cls:hover {
+    background-color: #218838;
+}
+
+.btn_cls {
+    margin-left: 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <style>
+        body {
+            background-image: url("{% static 'images/bg.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #fffdfd;
+            margin-bottom: 20px;
+        }
+
+        .account-details {
+            background: rgba(0, 0, 0, 0.7);
+            max-width: 400px;
+            padding: 20px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #bbadadb9;
+        }
+
+        p span {
+            font-weight: bold;
+            color: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Account Details</h2>
+    <div class="account-details">
+        <p><span>Name:</span> {{user.first_name}}</p>
+        <p><span>Username:</span> {{user.username}}</p>
+        <p><span>Email:</span> {{user.email}}</p>
+        <p><span>Password:</span> ********</p>
+    </div>
+</body>
+
+</html>
